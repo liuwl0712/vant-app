@@ -1,0 +1,9 @@
+@import './index.scss';
+@import './guidePage.scss';
+
+html,
+body,
+#app {
+    height: $height;
+    width: $width;
+}
