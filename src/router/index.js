@@ -1,12 +1,15 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: liuwl
  * @Date: 2021-05-17 19:07:37
- * @LastEditTime: 2021-05-17 19:12:50
+ * @LastEditTime: 2021-05-25 10:46:46
  */
 import Vue from "vue";
 import VueRouter from "vue-router";
+
+const guidePage = () => import("../view/guidePage.vue");
+const login = () => import("../view/login.vue");
 
 Vue.use(VueRouter);
 
@@ -14,13 +17,17 @@ const router = new VueRouter({
   routes: [
     {
       path: "/",
-      redirect: "/app",
+      redirect: "/guidePage",
     },
     {
-      path: "/app",
-      name: "app",
-      component: () => import("../view/app.vue"),
-    //   meta: { needLogin: false },
+      path: "/guidePage",
+      name: "guidePage",
+      component: guidePage,
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: login,
     },
   ],
 });

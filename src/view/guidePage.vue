@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-05-17 19:12:30
- * @LastEditTime: 2021-05-18 16:25:44
+ * @LastEditTime: 2021-05-25 10:48:39
 -->
 <template>
   <div class="guidePage">
@@ -29,6 +29,7 @@
             type="default"
             color="#554d84"
             size="small"
+            @click="toLogin"
           >开启生活娱乐</van-button>
         </div>
       </van-swipe-item>
@@ -50,22 +51,27 @@ export default {
           id: "1",
           title: "圈子动态",
           content: "分享圈子动态，分享生活",
-          image: "http://localhost:8080/img/guidePage1.d90c3a86.png",
+          image: require("@/assets/img/guidePage1.png"),
         },
         {
           id: "2",
           title: "娱乐游戏",
           content: "KTV娱乐，朋友互动玩游戏",
-          image: "http://localhost:8080/img/guidePage2.ad4553e3.png",
+          image: require("@/assets/img/guidePage2.png"),
         },
         {
           id: "3",
           title: "社交聊条",
           content: "与附近好友，朋友畅聊",
-          image: "http://localhost:8080/img/guidePage3.04719d21.png",
+          image: require("@/assets/img/guidePage3.png"),
         },
       ],
     };
+  },
+  methods: {
+    toLogin() {
+      this.$router.push("/login");
+    },
   },
 };
 </script>
