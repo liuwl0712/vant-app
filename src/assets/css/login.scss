@@ -31,7 +31,7 @@
     }
 
     .div-1 {
-        padding: 140px 40px 0px 40px;
+        padding: 160px 40px 0px 40px;
 
         .div-1-1 {
             font-weight: 600;
@@ -50,6 +50,10 @@
             border-bottom: 1px solid;
             padding: 8px 0px;
             margin-top: 50px;
+
+            .van-icon-passed {
+                color: #07c160;
+            }
         }
 
         .login-loginBtn {
@@ -67,7 +71,7 @@
         width: 100%;
         padding: 0px 40px;
         box-sizing: border-box;
-        bottom: 70px;
+        bottom: 80px;
 
         .div-img {
             display: flex;

@@ -3,13 +3,14 @@
  * @version:
  * @Author: liuwl
  * @Date: 2021-05-17 19:07:37
- * @LastEditTime: 2021-05-25 10:46:46
+ * @LastEditTime: 2021-05-25 15:44:57
  */
 import Vue from "vue";
 import VueRouter from "vue-router";
 
 const guidePage = () => import("../view/guidePage.vue");
 const login = () => import("../view/login.vue");
+const validation = () => import("../view/validation.vue");
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const router = new VueRouter({
       path: "/login",
       name: "login",
       component: login,
+    },
+    {
+      path: "/validation",
+      name: "validation",
+      component: validation,
     },
   ],
 });

@@ -1,10 +1,26 @@
 @import './index.scss';
 @import './guidePage.scss';
 @import './login.scss';
+@import './validation.scss';
 
 html,
 body,
 #app {
     height: $height;
     width: $width;
+}
+
+.animate__fadeIn {
+    animation-duration: 2s;
+    animation-delay: 0s !important;
+}
+
+.animate__fadeInLeft {
+    animation-duration: 3s;
+    animation-delay: 0s !important;
+}
+
+.animate__fadeInRight {
+    animation-duration: 3s;
+    animation-delay: 0s !important;
 }

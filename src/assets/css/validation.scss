@@ -1,0 +1,39 @@
+.validation {
+    .div-1 {
+        .van-password-input {
+            margin-top: 20px;
+
+            .van-password-input__item {
+                border: 1px solid #c8c9cc;
+            }
+        }
+
+        .div-1-2 {
+            margin: 10px 15px;
+            text-align: right;
+            font-size: 11px;
+
+            .div-1-2-span {
+                color: #1989fa;
+            }
+        }
+    }
+
+    .div-2 {
+        text-align: center;
+
+        .van-button--disabled {
+            background: #969799 !important;
+        }
+
+        .login-sucess-icon {
+            font-size: 30px;
+            color: #07c160;
+            font-weight: bold;
+        }
+    }
+
+    .validation-overlay {
+        background-color: #fff0;
+    }
+}
