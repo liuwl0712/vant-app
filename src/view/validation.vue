@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-05-25 15:44:15
- * @LastEditTime: 2021-05-25 18:04:09
+ * @LastEditTime: 2021-05-26 09:36:46
 -->
 <template>
   <div class="login validation">
@@ -31,21 +31,26 @@
         >重新获取</span></div>
     </div>
     <div class="div-2">
-      <van-button
-        v-if="!iconShow"
-        class="login-loginBtn"
-        color="#554d84"
-        :disabled="btnDisabled"
-        block
-        @click="theLogin"
-        :loading="btnLoading"
-        loading-type="spinner"
-      >登录</van-button>
-      <van-icon
-        v-if="iconShow"
-        name="passed"
-        class="login-sucess-icon"
-      />
+      <transition
+        enter-active-class="animate__animated animate__fadeInUp"
+        leave-active-class="animate__animated animate__zoomOut"
+      >
+        <van-button
+          v-if="!iconShow"
+          class="login-loginBtn"
+          color="#554d84"
+          :disabled="btnDisabled"
+          block
+          @click="theLogin"
+          :loading="btnLoading"
+          loading-type="spinner"
+        >登录</van-button>
+        <van-icon
+          v-if="iconShow"
+          name="passed"
+          class="login-sucess-icon"
+        />
+      </transition>
     </div>
     <van-overlay
       :show="show"
@@ -116,8 +121,8 @@ export default {
         if (this.value === "12345") {
           this.iconShow = true;
           setTimeout(() => {
-            // this.$router.push("/login");
-          }, 500);
+            this.$router.push("/login");
+          }, 1000);
         } else {
           Toast("验证码校验失败");
           this.value = "";

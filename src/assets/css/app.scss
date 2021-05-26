@@ -2,12 +2,14 @@
 @import './guidePage.scss';
 @import './login.scss';
 @import './validation.scss';
+@import './home.scss';
 
 html,
 body,
 #app {
     height: $height;
     width: $width;
+    overflow: hidden;
 }
 
 .animate__fadeIn {
