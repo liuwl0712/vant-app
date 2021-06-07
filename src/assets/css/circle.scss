@@ -1,0 +1,76 @@
+.circle-class {
+    .circle-header-class {
+        height: 100px;
+        width: 100%;
+        background-color: #554d84;
+        padding: 0px 20px;
+        box-sizing: border-box;
+
+        .circle-header-cen-class {
+            top: 60px;
+            position: absolute;
+
+            .van-switch {
+                background-color: rgb(41, 30, 108);
+                width: 140px;
+                height: 25px;
+
+                .van-switch__node {
+                    width: 70px;
+                    height: 25px;
+                    border-radius: 20px;
+                }
+            }
+
+            .van-switch--disabled {
+                opacity: inherit;
+            }
+
+            .van-switch--on {
+                .van-switch__node {
+                    margin-left: 39px;
+                }
+            }
+
+            .circle-header-cen-nearby {
+                position: absolute;
+                top: 5px;
+                left: 12px;
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .circle-header-cen-nearby-active {
+                color: #554d84;
+            }
+
+            .circle-header-cen-friend {
+                position: absolute;
+                top: 5px;
+                right: 12px;
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .circle-header-cen-friend-active {
+                color: #554d84;
+            }
+        }
+
+        .circle-header-btn-class {
+            position: absolute;
+            top: 63px;
+            font-size: 20px;
+            right: 25px;
+
+            .van-icon-add {
+                color: #ffffff;
+            }
+
+            .van-icon-comment {
+                margin-left: 20px;
+                color: #ffffff;
+            }
+        }
+    }
+}

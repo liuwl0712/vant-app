@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-05-17 19:12:30
- * @LastEditTime: 2021-05-25 10:48:39
+ * @LastEditTime: 2021-06-07 10:42:55
 -->
 <template>
   <div class="guidePage">
@@ -44,6 +44,7 @@ Vue.use(SwipeItem);
 Vue.use(Image);
 Vue.use(Button);
 export default {
+  name: "guidePage",
   data() {
     return {
       guideDate: [
@@ -70,7 +71,7 @@ export default {
   },
   methods: {
     toLogin() {
-      this.$router.push("/login");
+      this.$router.push("/validation");
     },
   },
 };

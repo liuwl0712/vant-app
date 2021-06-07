@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-05-25 10:46:09
- * @LastEditTime: 2021-05-25 17:53:56
+ * @LastEditTime: 2021-06-07 10:43:09
 -->
 <template>
   <div class="login">
@@ -70,6 +70,7 @@ Vue.use(Divider);
 Vue.use(Button);
 Vue.use(Field);
 export default {
+  name: "login",
   data() {
     return {
       phone: "",

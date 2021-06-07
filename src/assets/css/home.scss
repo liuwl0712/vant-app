@@ -3,16 +3,17 @@
     background-color: #f7f8fa;
 
     .bottomNavigation {
-        height: 65px;
+        height: 70px;
         box-shadow: 0px 0px 4px 0px #0000001f, 0 0 6px #0000000a;
         position: fixed;
         width: 100%;
         bottom: 0;
         display: flex;
+        background: #fff;
 
         .bottomNavigation-dom {
             flex: 1;
-            padding: 0px 0px 20px 0px;
+            padding: 0px 0px 25px 0px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -29,11 +30,15 @@
                 .bottomNavigation-dom-active {
                     width: 50px;
                     height: 50px;
+                    border-radius: 50px;
+                    background: #fff;
+                    box-shadow: 0px -8px 7px -4px #0000001f;
 
                     .bottomNavigation-dom-icon-active {
                         font-size: 40px;
                         font-weight: 600;
-                        color: #969799;
+                        color: #554d84;
+                        line-height: 50px;
                     }
                 }
 
@@ -41,6 +46,11 @@
                     font-size: 10px;
                     font-weight: 600;
                     color: #969799;
+                }
+
+                .bottomNavigation-dom-title-active {
+                    color: #554d84;
+                    font-size: 12px;
                 }
             }
         }

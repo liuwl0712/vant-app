@@ -1,0 +1,33 @@
+.mine-class {
+    .mine-backgruond-class {
+        height: 160px;
+        width: 100%;
+        background: #554d84;
+        border-radius: 0px 0px 40px 40px;
+        position: relative;
+
+        .van-icon-wap-nav {
+            position: absolute;
+            font-size: 22px;
+            color: #fff;
+            right: 20px;
+            top: 40px;
+        }
+    }
+
+    .mine-information-class {
+        height: 120px;
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 110px;
+
+        .mine-information-card {
+            height: 100%;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+    }
+}

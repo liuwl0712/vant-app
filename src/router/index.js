@@ -3,7 +3,7 @@
  * @version:
  * @Author: liuwl
  * @Date: 2021-05-17 19:07:37
- * @LastEditTime: 2021-05-26 10:18:07
+ * @LastEditTime: 2021-06-07 10:46:36
  */
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -12,6 +12,9 @@ const guidePage = () => import("../view/guidePage.vue");
 const login = () => import("../view/login.vue");
 const validation = () => import("../view/validation.vue");
 const home = () => import("../view/home.vue");
+const gameCenter = () => import("../view/gameCenter/gameCenterPage.vue");
+const circle = () => import("../view/circle/circlePage.vue");
+const mine = () => import("../view/mine/minePage.vue");
 
 Vue.use(VueRouter);
 
@@ -39,7 +42,25 @@ const router = new VueRouter({
     {
       path: "/home",
       name: "home",
+      redirect: "/gameCenter",
       component: home,
+      children: [
+        {
+          path: "/gameCenter",
+          name: "gameCenter",
+          component: gameCenter,
+        },
+        {
+          path: "/circle",
+          name: "circle",
+          component: circle,
+        },
+        {
+          path: "/mine",
+          name: "mine",
+          component: mine,
+        },
+      ],
     },
   ],
 });

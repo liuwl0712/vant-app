@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-05-25 15:44:15
- * @LastEditTime: 2021-05-26 09:36:46
+ * @LastEditTime: 2021-06-07 10:43:23
 -->
 <template>
   <div class="login validation">
@@ -76,6 +76,7 @@ Vue.use(Toast);
 Vue.use(PasswordInput);
 Vue.use(NumberKeyboard);
 export default {
+  name: "vaidation",
   data() {
     return {
       value: "",
@@ -121,7 +122,7 @@ export default {
         if (this.value === "12345") {
           this.iconShow = true;
           setTimeout(() => {
-            this.$router.push("/login");
+            this.$router.push("/home");
           }, 1000);
         } else {
           Toast("验证码校验失败");
