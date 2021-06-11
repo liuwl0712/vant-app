@@ -3,7 +3,7 @@
  * @version: 
  * @Author: liuwl
  * @Date: 2021-06-07 10:45:17
- * @LastEditTime: 2021-06-07 14:34:39
+ * @LastEditTime: 2021-06-07 15:48:32
 -->
 <template>
   <div class="circle-class">
@@ -43,6 +43,11 @@ export default {
     };
   },
   methods: {
+    /**
+     * 不同的圈子切换，这里是做切换处理
+     * 使用的是vant的开关组件，进行的样式修改
+     * type值为传递的不同圈子类型，进行切换处理
+     */
     circleChange(type) {
       if (type === "nearby") {
         this.checked = false;

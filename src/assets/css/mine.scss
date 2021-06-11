@@ -16,7 +16,7 @@
     }
 
     .mine-information-class {
-        height: 120px;
+        height: 140px;
         width: 100%;
         padding: 0px 20px;
         box-sizing: border-box;
@@ -28,6 +28,103 @@
             width: 100%;
             background-color: #ffffff;
             border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+
+            .mine-information-card-information {
+                display: flex;
+                align-items: center;
+
+                .mine-information-card-information-name {
+                    max-width: 60px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .mine-information-card-information-icon1 {
+                    height: 16px;
+                    width: 65px;
+                    background: #af52de;
+                    border-radius: 20px;
+                    color: #ffffff;
+                    margin-left: 10px;
+                    font-size: 10px;
+                    position: relative;
+
+                    .van-icon-award {
+                        font-size: 12px;
+                        margin-left: 5px;
+                        margin-top: 2px;
+                    }
+
+                    .mine-information-card-information-icon1-title {
+                        position: absolute;
+                        top: 1.5px;
+                        right: 5px;
+                    }
+                }
+
+                .mine-information-card-information-icon2 {
+                    height: 16px;
+                    width: 35px;
+                    background: #ff3a30;
+                    border-radius: 20px;
+                    color: #ffffff;
+                    margin-left: 5px;
+                    font-size: 10px;
+                    position: relative;
+
+                    .van-icon-award {
+                        font-size: 12px;
+                        margin-left: 5px;
+                        margin-top: 2px;
+                    }
+
+                    .mine-information-card-information-icon2-title {
+                        position: absolute;
+                        top: 3px;
+                        right: 5px;
+                    }
+                }
+            }
+
+            .mine-information-card-text {
+                margin-top: 10px;
+                color: #969799;
+            }
+
+            .mine-information-card-cont {
+                height: 50px;
+                display: flex;
+                margin-top: 10px;
+
+                .mine-information-card-cont-text {
+                    flex: 1;
+                    padding: 8px 0px;
+
+                    .mine-information-card-cont-text-cont1 {
+                        width: 30px;
+                        text-align: center;
+                    }
+
+                    .mine-information-card-cont-text-cont2 {
+                        padding-left: 50px;
+                        text-align: center;
+                    }
+                }
+
+                .mine-information-card-cont-text1 {
+                    flex: 1.5;
+                    padding: 8px 0px;
+                    text-align: center;
+                }
+
+                .mine-information-card-cont-divider {
+                    flex: 0.01;
+                    margin: 13px 0px;
+                    border-right: 1px solid #c8c9cc;
+                }
+            }
         }
     }
 }
